@@ -1,3 +1,7 @@
-export default function Accueil() {
-  return <h1>Accueil</h1>;
+export function Accueil() {
+  return (
+    <>
+      <h1>Sylvain Dubray</h1>
+    </>
+  );
 }
