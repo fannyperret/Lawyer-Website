@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <nav>
-      <a href="/">LOGO</a>
+      <a href="/accueil">LOGO</a>
       <ul>
         <li>
           <a href="/accueil">Accueil</a>
