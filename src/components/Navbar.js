@@ -1,8 +1,9 @@
 import { Routes, Route, Link, NavLink } from "react-router-dom";
-import { Accueil } from "./pages/Accueil";
-import { DomainesActivite } from "./pages/DomainesActivite";
-import { PolitiqueTarifaire } from "./pages/PolitiqueTarifaire";
-import { Contact } from "./pages/Contact";
+import { Accueil } from "../pages/Accueil";
+import { DomainesActivite } from "../pages/DomainesActivite";
+import { PolitiqueTarifaire } from "../pages/PolitiqueTarifaire";
+import { Contact } from "../pages/Contact";
+import { Page404 } from "../pages/Page404";
 
 export function Navbar() {
   return (
@@ -61,6 +62,7 @@ export function Navbar() {
         <Route path="/domainesactivite" element={<DomainesActivite />} />
         <Route path="/politiquetarifaire" element={<PolitiqueTarifaire />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </>
   );
