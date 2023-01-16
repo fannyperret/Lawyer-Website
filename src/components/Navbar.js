@@ -1,4 +1,4 @@
-import { Routes, Route, Link, NavLink } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 import { Accueil } from "../pages/Accueil";
 import { DomainesActivite } from "../pages/DomainesActivite";
 import { PolitiqueTarifaire } from "../pages/PolitiqueTarifaire";
@@ -11,14 +11,14 @@ export function Navbar() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/accueil">Logo</NavLink>
+            <NavLink to="/">Logo</NavLink>
           </li>
           <li>
             <NavLink
               style={({ isActive }) => {
                 return isActive ? { color: "red" } : {};
               }}
-              to="/accueil"
+              to="/"
             >
               Accueil
             </NavLink>
@@ -57,7 +57,7 @@ export function Navbar() {
       </nav>
 
       <Routes>
-        <Route path="/accueil" element={<Accueil />} />
+        <Route path="/" element={<Accueil />} />
         <Route path="/accueil" element={<Accueil />} />
         <Route path="/domainesactivite" element={<DomainesActivite />} />
         <Route path="/politiquetarifaire" element={<PolitiqueTarifaire />} />
