@@ -1,0 +1,50 @@
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px #0000004d;
+}
+
+ul {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  height: 64px;
+  height: 84px;
+}
+
+.logo img {
+  max-width: 400px;
+}
+
+.hover-nav a:hover,
+.hover-nav a:active {
+  border-bottom: 3px solid #f8636c;
+  padding-bottom: 2px;
+}
+
+.hover-nav .active {
+  border-bottom: 3px solid #f8636c;
+  padding-bottom: 2px;
+}
+
+.contact a {
+  color: #ffffff;
+  background-color: #d81f2a;
+  padding: 10px 30px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px #0000004d;
+}
+
+.contact a:hover {
+  box-shadow: none;
+}
+
+.contact .active {
+  color: black;
+  background-color: white;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: 3px solid #f8636c;
+  padding-bottom: 2px;
+}

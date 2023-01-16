@@ -5,53 +5,51 @@ import { PolitiqueTarifaire } from "../pages/PolitiqueTarifaire";
 import { Contact } from "../pages/Contact";
 import { Page404 } from "../pages/Page404";
 
+import logo from "../images/logo.png";
+import "./Navbar.css";
+
 export function Navbar() {
   return (
     <>
       <nav>
         <ul>
-          <li>
-            <NavLink to="/">Logo</NavLink>
+          <li className="logo">
+            <NavLink to="/">
+              <img src={logo} alt="Coding Beauty logo"></img>
+            </NavLink>
           </li>
-          <li>
+          <li className="hover-nav">
             <NavLink
               style={({ isActive }) => {
-                return isActive ? { color: "red" } : {};
+                return isActive ? { color: "black" } : {};
               }}
               to="/"
             >
               Accueil
             </NavLink>
           </li>
-          <li>
+          <li className="hover-nav">
             <NavLink
               style={({ isActive }) => {
-                return isActive ? { color: "red" } : {};
+                return isActive ? { color: "black" } : {};
               }}
               to="/domainesactivite"
             >
               Domaines d'activité
             </NavLink>
           </li>
-          <li>
+          <li className="hover-nav">
             <NavLink
               style={({ isActive }) => {
-                return isActive ? { color: "red" } : {};
+                return isActive ? { color: "black" } : {};
               }}
               to="/politiquetarifaire"
             >
               Politique tarifaire
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              style={({ isActive }) => {
-                return isActive ? { color: "red" } : {};
-              }}
-              to="/contact"
-            >
-              Contact
-            </NavLink>
+          <li className="contact">
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
       </nav>
