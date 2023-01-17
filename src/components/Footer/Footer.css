@@ -8,7 +8,7 @@ footer {
   margin: auto;
   max-width: 1200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }

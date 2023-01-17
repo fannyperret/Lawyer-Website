@@ -1,5 +1,5 @@
 import { Routes, Route, NavLink } from "react-router-dom";
-import { Accueil } from "../../pages/Accueil";
+import { Accueil } from "../../pages/Accueil/Accueil";
 import { DomainesActivite } from "../../pages/DomainesActivite";
 import { PolitiqueTarifaire } from "../../pages/PolitiqueTarifaire";
 import { Contact } from "../../pages/Contact";
