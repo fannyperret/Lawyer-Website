@@ -1,11 +1,11 @@
 import { Routes, Route, NavLink } from "react-router-dom";
-import { Accueil } from "../pages/Accueil";
-import { DomainesActivite } from "../pages/DomainesActivite";
-import { PolitiqueTarifaire } from "../pages/PolitiqueTarifaire";
-import { Contact } from "../pages/Contact";
-import { Page404 } from "../pages/Page404";
+import { Accueil } from "../../pages/Accueil";
+import { DomainesActivite } from "../../pages/DomainesActivite";
+import { PolitiqueTarifaire } from "../../pages/PolitiqueTarifaire";
+import { Contact } from "../../pages/Contact";
+import { Page404 } from "../../pages/Page404";
 
-import logo from "../images/logo.png";
+import logo from "../../images/logo.png";
 import "./Navbar.css";
 
 export function Navbar() {

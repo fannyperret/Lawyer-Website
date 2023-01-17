@@ -1,0 +1,22 @@
+footer {
+  background-color: white;
+  font-size: 0.8em;
+  padding: 50px 0;
+}
+
+.footer-container {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-div {
+  padding: 20px;
+}
+
+.footer-img {
+  max-width: 80px;
+}
