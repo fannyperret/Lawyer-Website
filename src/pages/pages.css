@@ -82,9 +82,13 @@ form {
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-form input {
-  width: 350px;
+input {
   height: 36px;
+}
+
+input,
+textarea {
+  width: 350px;
 }
 
 button {
