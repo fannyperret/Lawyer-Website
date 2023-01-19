@@ -1,6 +1,15 @@
 .main {
   max-width: 1200px;
+  /* max-width: 1000px; */
   margin: auto;
+  /* background-image: url("../images/cour_assises.JPG");
+  background-size: 100% 300px;
+  background-repeat: no-repeat; */
+}
+
+.align-end {
+  display: flex;
+  align-items: flex-end;
 }
 
 .container-home {
@@ -17,6 +26,7 @@
 
 .main p {
   padding: 20px 0;
+  line-height: 1.5;
 }
 
 .card {
@@ -37,4 +47,59 @@
   display: flex;
   justify-content: space-between;
   margin: 100px 0;
+}
+
+.container-img-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.container-contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 46px 0;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  background-color: white;
+  font-weight: bold;
+  padding: 50px 60px;
+  border-radius: 4px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+form input {
+  width: 200px;
+  height: 36px;
+}
+
+button {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+  height: 36px;
+  padding: 20px 10px;
+  background-color: #d81f2a;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid #d81f2a;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }

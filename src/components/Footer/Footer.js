@@ -1,5 +1,6 @@
-import logoBarreauAvocat from "../../images/logo_barreau_avocats.png";
+import { NavLink } from "react-router-dom";
 
+import logoBarreauAvocat from "../../images/logo_barreau_avocats.png";
 import "./Footer.css";
 
 export function Footer() {
@@ -9,7 +10,9 @@ export function Footer() {
         <div className="footer-container">
           <div className="footer-div">
             <p>© Sylvain Dubray</p>
-            <p>Mentions légales</p>
+            <p>
+              <NavLink to="/mentionslegales">Mentions légales</NavLink>
+            </p>
             <p>Intégration web : Joris Thomas</p>
           </div>
           <div className="footer-div">

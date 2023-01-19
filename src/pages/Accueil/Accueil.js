@@ -40,7 +40,7 @@ export function Accueil() {
               </p>
             </div>
           </div>
-          <div className="container-two">
+          <div className="align-end">
             <img
               className="portrait-img"
               src={portraitPhoto}

@@ -3,6 +3,7 @@ import { Accueil } from "../../pages/Accueil/Accueil";
 import { DomainesActivite } from "../../pages/DomainesActivite";
 import { PolitiqueTarifaire } from "../../pages/PolitiqueTarifaire";
 import { Contact } from "../../pages/Contact";
+import { MentionsLegales } from "../../pages/MentionsLegales";
 import { Page404 } from "../../pages/Page404";
 
 import logo from "../../images/logo.png";
@@ -60,6 +61,7 @@ export function Navbar() {
         <Route path="/domainesactivite" element={<DomainesActivite />} />
         <Route path="/politiquetarifaire" element={<PolitiqueTarifaire />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/mentionslegales" element={<MentionsLegales />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </>

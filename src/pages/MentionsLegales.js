@@ -10,18 +10,22 @@ export function MentionsLegales() {
             <div>
               <p>
                 Responsable du site : <strong>Sylvain Dubray</strong>
+                <br />
+                1 ter rue Frédéric Mistral
+                <br />
+                69 100 Villeurbanne
+                <br />
+                tél : 09 54 13 53 59
               </p>
-              <p>1 ter rue Frédéric Mistral</p>
-              <p>69 100 Villeurbanne</p>
-              <p>tél : 09 54 13 53 59</p>
             </div>
             <div>
               <p>
                 Hébergeur : <strong>OVH</strong>
+                <br />
+                2 rue Kellermann 59 100 Roubaix
+                <br />
+                France
               </p>
-              <p>2 rue Kellermann</p>
-              <p>59 100 Roubaix</p>
-              <p>France</p>
             </div>
           </div>
           <div>
