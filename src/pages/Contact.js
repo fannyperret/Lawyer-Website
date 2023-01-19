@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+
 export function Contact() {
   return (
     <>
@@ -26,7 +29,8 @@ export function Contact() {
               ></textarea>
             </div>
             <button>
-              <i>Icon</i>Envoyer
+              <FontAwesomeIcon className="icon-small icon-white" icon={faPaperPlane} />
+              Envoyer
             </button>
           </form>
           <div>Google Map</div>

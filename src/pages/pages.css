@@ -32,6 +32,7 @@
 .card {
   width: 250px;
   /* width: 20%; */
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -102,4 +103,24 @@ button {
   border: 1px solid #d81f2a;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.icon-small {
+  font-size: 1.5em;
+}
+.icon-medium {
+  font-size: 2.5em;
+}
+
+.icon-white > path {
+  color: #f1f3f5;
+}
+.icon-red > path {
+  color: #d81f2a;
+}
+.icon-brown > path {
+  color: #483a3a;
+}
+.icon-grey > path {
+  color: #484848;
 }
