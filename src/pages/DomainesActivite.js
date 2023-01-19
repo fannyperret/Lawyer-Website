@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHandshake } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBriefcase,
+  faHandHoldingMedical,
+  faLandmark,
+} from "@fortawesome/free-solid-svg-icons";
 
 export function DomainesActivite() {
   return (
@@ -15,15 +19,24 @@ export function DomainesActivite() {
         <div className="card-group">
           <div className="card">
             <h3>Droit du travail</h3>
-            <FontAwesomeIcon className="icon-medium icon-red"  icon={faHandshake} />
+            <FontAwesomeIcon
+              className="icon-medium icon-red"
+              icon={faBriefcase}
+            />
           </div>
           <div className="card">
             <h3>Santé au travail</h3>
-            <FontAwesomeIcon className="icon-medium icon-brown"  icon={faHandshake} />
+            <FontAwesomeIcon
+              className="icon-medium icon-brown"
+              icon={faHandHoldingMedical}
+            />
           </div>
           <div className="card">
             <h3>Salaires</h3>
-            <FontAwesomeIcon className="icon-medium icon-grey"  icon={faHandshake} />
+            <FontAwesomeIcon
+              className="icon-medium icon-brown-clear"
+              icon={faLandmark}
+            />
           </div>
         </div>
 

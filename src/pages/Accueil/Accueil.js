@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHandshake,
   faScaleBalanced,
+  faGavel,
 } from "@fortawesome/free-solid-svg-icons";
 import portraitPhoto from "../../images/portrait.jpg";
 
@@ -58,7 +59,7 @@ export function Accueil() {
           <div className="card">
             <h3>Réactivité</h3>
             <FontAwesomeIcon
-              className="icon-medium icon-grey"
+              className="icon-medium icon-brown-clear"
               icon={faHandshake}
             />
           </div>
@@ -104,10 +105,7 @@ export function Accueil() {
         <div className="card-container">
           <div className="card">
             <h3>Efficacité</h3>
-            <FontAwesomeIcon
-              className="icon-medium icon-red"
-              icon={faScaleBalanced}
-            />
+            <FontAwesomeIcon className="icon-medium icon-red" icon={faGavel} />
           </div>
           <div className="card-text">
             <p>
