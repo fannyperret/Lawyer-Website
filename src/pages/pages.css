@@ -7,6 +7,10 @@
   background-repeat: no-repeat; */
 }
 
+.map-container {
+  width: 500px;
+}
+
 .align-end {
   display: flex;
   align-items: flex-end;
@@ -27,6 +31,10 @@
 .main p {
   padding: 20px 0;
   line-height: 1.5;
+}
+
+.map-info-window > p {
+  padding: 0;
 }
 
 .card {
