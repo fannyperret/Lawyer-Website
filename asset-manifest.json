@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.7ff6a62c.css",
-    "main.js": "/react-gh-pages/static/js/main.41816e42.js",
-    "static/media/cour_assises.JPG": "/react-gh-pages/static/media/cour_assises.b5f2a18fab9785e21dd6.JPG",
-    "static/media/robe_avocat.JPG": "/react-gh-pages/static/media/robe_avocat.e23e7e2bfecb007a376e.JPG",
-    "static/media/portrait.jpg": "/react-gh-pages/static/media/portrait.9bad05b695a78ff2afc4.jpg",
-    "static/media/logo_barreau_avocats.png": "/react-gh-pages/static/media/logo_barreau_avocats.fc35646fe9f9b4d4d8e1.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.7ff6a62c.css.map": "/react-gh-pages/static/css/main.7ff6a62c.css.map",
-    "main.41816e42.js.map": "/react-gh-pages/static/js/main.41816e42.js.map"
+    "main.css": "/fannyperret.github.io/Lawyer-Website/static/css/main.7ff6a62c.css",
+    "main.js": "/fannyperret.github.io/Lawyer-Website/static/js/main.92f2c0b2.js",
+    "static/media/cour_assises.JPG": "/fannyperret.github.io/Lawyer-Website/static/media/cour_assises.b5f2a18fab9785e21dd6.JPG",
+    "static/media/robe_avocat.JPG": "/fannyperret.github.io/Lawyer-Website/static/media/robe_avocat.e23e7e2bfecb007a376e.JPG",
+    "static/media/portrait.jpg": "/fannyperret.github.io/Lawyer-Website/static/media/portrait.9bad05b695a78ff2afc4.jpg",
+    "static/media/logo_barreau_avocats.png": "/fannyperret.github.io/Lawyer-Website/static/media/logo_barreau_avocats.fc35646fe9f9b4d4d8e1.png",
+    "index.html": "/fannyperret.github.io/Lawyer-Website/index.html",
+    "main.7ff6a62c.css.map": "/fannyperret.github.io/Lawyer-Website/static/css/main.7ff6a62c.css.map",
+    "main.92f2c0b2.js.map": "/fannyperret.github.io/Lawyer-Website/static/js/main.92f2c0b2.js.map"
   },
   "entrypoints": [
     "static/css/main.7ff6a62c.css",
-    "static/js/main.41816e42.js"
+    "static/js/main.92f2c0b2.js"
   ]
 }
