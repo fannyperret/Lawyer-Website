@@ -13,7 +13,7 @@ export function Footer() {
             <p>
               <NavLink to="/mentionslegales">Mentions légales</NavLink>
             </p>
-            <p>Intégration web : Joris Thomas</p>
+            <p>Intégration web : Fanny Perret</p>
           </div>
           <div className="footer-div">
             <p>Sylvain Dubray</p>
