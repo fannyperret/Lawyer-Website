@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Lawyer-Website/static/css/main.7ff6a62c.css",
-    "main.js": "/Lawyer-Website/static/js/main.e65a2f65.js",
-    "static/media/cour_assises.JPG": "/Lawyer-Website/static/media/cour_assises.4356960b7e00392ad512.JPG",
+    "main.js": "/Lawyer-Website/static/js/main.0ca6272b.js",
     "static/media/robe_avocat.JPG": "/Lawyer-Website/static/media/robe_avocat.e23e7e2bfecb007a376e.JPG",
     "static/media/portrait.jpg": "/Lawyer-Website/static/media/portrait.9bad05b695a78ff2afc4.jpg",
+    "static/media/cour_assises.JPG": "/Lawyer-Website/static/media/cour_assises.6a70c1311d557653db14.JPG",
     "static/media/logo_barreau_avocats.png": "/Lawyer-Website/static/media/logo_barreau_avocats.fc35646fe9f9b4d4d8e1.png",
     "index.html": "/Lawyer-Website/index.html",
     "main.7ff6a62c.css.map": "/Lawyer-Website/static/css/main.7ff6a62c.css.map",
-    "main.e65a2f65.js.map": "/Lawyer-Website/static/js/main.e65a2f65.js.map"
+    "main.0ca6272b.js.map": "/Lawyer-Website/static/js/main.0ca6272b.js.map"
   },
   "entrypoints": [
     "static/css/main.7ff6a62c.css",
-    "static/js/main.e65a2f65.js"
+    "static/js/main.0ca6272b.js"
   ]
 }
