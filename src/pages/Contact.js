@@ -58,7 +58,6 @@ export function Contact() {
 
         <div className="container-contact">
           <form onSubmit={handleSubmit}>
-            {success && <p>Votre message vient d'être envoyé avec succès !</p>}
             <div className="container-input">
               <label htmlFor="name">Votre nom et prénom : </label>
               <input
@@ -92,6 +91,7 @@ export function Contact() {
                 onChange={(event) => setMessage(event.target.value)}
               ></textarea>
             </div>
+            <span className={`success ${success ? "visible success" : "hidden"}`}>Votre message a bien été envoyé, <br/>nous essaierons de vous répondre dans les plus brefs délais !</span>
             <button>
               <FontAwesomeIcon
                 className="icon-small icon-white"
