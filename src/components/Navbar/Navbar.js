@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 import { Accueil } from "../../pages/Accueil/Accueil";
 import { DomainesActivite } from "../../pages/DomainesActivite";
@@ -10,6 +11,10 @@ import logo from "../../images/logo.png";
 import "./Navbar.css";
 
 export function Navbar() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
   return (
     <>
       <nav>
@@ -56,13 +61,13 @@ export function Navbar() {
       </nav>
 
       <Routes>
+        <Route path="*" element={<Page404 />} />
         <Route path="/" element={<Accueil />} />
         <Route path="/accueil" element={<Accueil />} />
         <Route path="/domainesactivite" element={<DomainesActivite />} />
         <Route path="/politiquetarifaire" element={<PolitiqueTarifaire />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/mentionslegales" element={<MentionsLegales />} />
-        <Route path="*" element={<Page404 />} />
       </Routes>
     </>
   );

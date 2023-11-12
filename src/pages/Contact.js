@@ -1,4 +1,5 @@
-import { useMemo, useState, useEffect } from "react";
+import { useState, useMemo, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 import {
   GoogleMap,
   useLoadScript,
@@ -9,10 +10,45 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 export function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState(false);
+
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyCqzOa7PXbIfTcxbmEeGf3ykCRxHahddZs",
   });
   if (!isLoaded) return <div>Loading...</div>;
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // Use your EmailJS template ID and user ID
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message,
+    };
+
+    emailjs
+      .send(
+        "service_98d5ywd",
+        "template_4b2j799",
+        templateParams,
+        "CJsAYky93OblqEC5F"
+      )
+      .then((response) => {
+        console.log("Email send successfully:", response);
+        setName("");
+        setEmail("");
+        setMessage("");
+        setSuccess(true);
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+  };
+
   return (
     <>
       <div className="main">
@@ -21,14 +57,29 @@ export function Contact() {
         </div>
 
         <div className="container-contact">
-          <form>
+          <form onSubmit={handleSubmit}>
+            {success && <p>Votre message vient d'être envoyé avec succès !</p>}
             <div className="container-input">
               <label htmlFor="name">Votre nom et prénom : </label>
-              <input type="text" name="name" id="name" required />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+                required
+              />
             </div>
             <div className="container-input">
               <label htmlFor="email">Votre email : </label>
-              <input type="email" name="email" id="email" required />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                required
+              />
             </div>
             <div className="container-input">
               <label htmlFor="message">Votre message : </label>
@@ -37,6 +88,8 @@ export function Contact() {
                 name="message"
                 rows="8"
                 cols="40"
+                value={message}
+                onChange={(event) => setMessage(event.target.value)}
               ></textarea>
             </div>
             <button>

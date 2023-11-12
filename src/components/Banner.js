@@ -1,4 +1,4 @@
-import backgroundImg from "../images/cour_assises.JPG";
+import backgroundImg from "../images/cour_assises.jpg";
 
 export function Banner() {
   return (
