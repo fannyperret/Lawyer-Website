@@ -3,6 +3,16 @@ nav {
   box-shadow: 0 2px 5px #0000004d;
 }
 
+@media screen and (max-width: 1280px) {
+  nav ul {
+    display: none;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+}
+
 ul {
   margin: auto;
   display: flex;

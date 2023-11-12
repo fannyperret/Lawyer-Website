@@ -8,7 +8,7 @@ import {
 export function DomainesActivite() {
   return (
     <>
-      <div className="main">
+      <div className="page">
         <div className="container-home">
           <h1 className="h1-second-size">
             Domaine d'intervention

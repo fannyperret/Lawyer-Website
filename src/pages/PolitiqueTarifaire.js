@@ -3,13 +3,13 @@ import robeAvocat from "../images/robe_avocat.JPG";
 export function PolitiqueTarifaire() {
   return (
     <>
-      <div className="main">
+      <div className="page">
         <div className="container-home">
           <h1 className="h1-second-size">Politique tarifaire</h1>
         </div>
 
-        <div className="container-img-text">
-          <div>
+        <div className="description-container">
+          <div className="text-description">
             <p>
               Animé de la conviction que l’avocat, garant d’une défense de
               qualité, doit être accessible à tous, Maître Sylvain DUBRAY a
@@ -37,18 +37,9 @@ export function PolitiqueTarifaire() {
               clients connaissent précisément, pour chaque étape de la
               procédure, l’étendue de leur engagement financier.
             </p>
-            <p>
-              Ainsi, systématiquement, la signature d’une convention
-              d’honoraires vous sera proposée, laquelle prévoira un honoraire
-              forfaitaire (variable selon la complexité de la procédure
-              envisagée) ainsi qu’un honoraire de résultat qui ne sera dû par le
-              client que si les objectifs fixés d’un commun accord ont été
-              atteints.
-            </p>
           </div>
-          <div className="align-end">
+          <div className="portrait-img">
             <img
-              className="robe-avocat-img"
               src={robeAvocat}
               alt="portrait de Maître Sylvain Dubray"
             ></img>

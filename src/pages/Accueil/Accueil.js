@@ -11,14 +11,15 @@ import "./Accueil.css";
 export function Accueil() {
   return (
     <>
-      <div className="main">
-        <div className="container-home">
-          <div className="container-one">
-            <div className="container-title">
-              <h1>Sylvain Dubray</h1>
-              <h2>Avocat - Lyon</h2>
-            </div>
-            <div className="container-text">
+      <div className="page">
+        <div className="container">
+          <div className="title-container">
+            <h1>Sylvain Dubray</h1>
+            <h2>Avocat - Lyon</h2>
+          </div>
+
+          <div className="description-container">
+            <div className="text-description">
               <p>
                 L’avocat est un professionnel du droit qui a vocation à
                 conseiller ou défendre les personnes dans les difficultés
@@ -45,13 +46,13 @@ export function Accueil() {
                 et l’efficacité.
               </p>
             </div>
-          </div>
-          <div className="align-end">
-            <img
-              className="portrait-img"
-              src={portraitPhoto}
-              alt="portrait de Maître Sylvain Dubray"
-            ></img>
+
+            <div className="portrait-img">
+              <img
+                src={portraitPhoto}
+                alt="portrait de Maître Sylvain Dubray"
+              />
+            </div>
           </div>
         </div>
 
