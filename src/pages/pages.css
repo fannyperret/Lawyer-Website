@@ -90,7 +90,7 @@ textarea {
   padding: 8px;
 }
 
-button {
+.button {
   cursor: pointer;
   display: flex;
   justify-content: space-evenly;

@@ -92,7 +92,7 @@ export function Contact() {
               ></textarea>
             </div>
             <span className={`success ${success ? "visible success" : "hidden"}`}>Votre message a bien été envoyé, <br/>nous essaierons de vous répondre dans les plus brefs délais !</span>
-            <button>
+            <button className="button">
               <FontAwesomeIcon
                 className="icon-small icon-white"
                 icon={faPaperPlane}

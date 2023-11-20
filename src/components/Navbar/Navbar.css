@@ -4,13 +4,25 @@ nav {
 }
 
 @media screen and (max-width: 1280px) {
-  nav ul {
-    display: none;
+  ul, .container-nav {
+    flex-direction: column;
+  }
+
+  .toggle-menu {
+    display: block;
   }
 
   .card-container {
     flex-direction: column;
   }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .toggle-menu {
+    display: none;
+  }
+
 }
 
 ul {
@@ -19,9 +31,13 @@ ul {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  /* max-width: 1100px; */
   height: 64px;
   height: 84px;
+}
+
+.container-nav {
+  display: flex;
+  gap: 36px;
 }
 
 .logo img {
