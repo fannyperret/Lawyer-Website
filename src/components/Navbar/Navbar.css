@@ -1,77 +1,89 @@
+html,
+body {
+  margin: 0;
+}
+
 nav {
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px #0000004d;
-}
-
-@media screen and (max-width: 1280px) {
-  ul, .container-nav {
-    flex-direction: column;
-  }
-
-  .toggle-menu {
-    display: block;
-  }
-
-  .card-container {
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-
-  .toggle-menu {
-    display: none;
-  }
-
-}
-
-ul {
-  margin: auto;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  height: 64px;
-  height: 84px;
-}
-
-.container-nav {
-  display: flex;
-  gap: 36px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .logo img {
-  max-width: 400px;
+  margin: 17.5px 0;
+  max-height: 80px;
+  width: 80%;
 }
 
-.hover-nav a:hover,
-.hover-nav a:active {
-  border-bottom: 3px solid #f8636c;
-  padding-bottom: 2px;
+ul {
+  display: flex;
+  align-items: center;
 }
 
-.hover-nav .active {
-  border-bottom: 3px solid #f8636c;
-  padding-bottom: 2px;
+ul li {
+  margin: 0 25px;
 }
 
-.contact a {
-  color: #ffffff;
-  background-color: #d81f2a;
-  padding: 10px 30px;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px #0000004d;
+a.active {
+  text-decoration: underline 5px #F5777E;
 }
 
-.contact a:hover {
-  box-shadow: none;
+.menu-burger {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  width: 35px;
 }
 
-.contact .active {
-  color: black;
-  background-color: white;
-  box-shadow: none;
-  border-radius: 0;
-  border-bottom: 3px solid #f8636c;
-  padding-bottom: 2px;
+@media screen and (max-width: 900px) {
+  nav .mobile-menu {
+    margin-left: 0;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li {
+    margin: 32px;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: rgb(45, 44, 44);
+  }
+  a.active {
+    text-decoration: underline 10px #F5777E;
+  }
+
+  .menu-burger {
+    display: block;
+    cursor: pointer;
+  }
 }

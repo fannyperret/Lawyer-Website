@@ -7,27 +7,27 @@ import { Contact } from "../../pages/Contact";
 import { MentionsLegales } from "../../pages/MentionsLegales";
 import { Page404 } from "../../pages/Page404";
 
+import logo from "../../images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-
-import logo from "../../images/logo.png";
 import "./Navbar.css";
 
 export function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
+    console.log("setMenuIsOpen ? => ", isMenuOpen);
     setMenuOpen(!isMenuOpen);
   };
   return (
     <>
       <nav>
-        <ul>
-          <li className="logo">
-            <NavLink to="/">
-              <img src={logo} alt="Logo Sylvain Dubray Avocat"></img>
-            </NavLink>
-          </li>
-          <div className="container-nav">
+        <li className="logo">
+          <NavLink to="/">
+            <img src={logo} alt="Logo Sylvain Dubray Avocat"></img>
+          </NavLink>
+        </li>
+        <div className={`nav-links ${isMenuOpen ? "mobile-menu" : ""}`}>
+          <ul>
             <li className="hover-nav">
               <NavLink
                 style={({ isActive }) => {
@@ -61,8 +61,13 @@ export function Navbar() {
             <li className="contact">
               <NavLink to="/contact">Contact</NavLink>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
+        <FontAwesomeIcon
+          onClick={() => toggleMenu(true)}
+          className="menu-burger"
+          icon={isMenuOpen ? faXmark : faBars}
+        />
       </nav>
 
       <Routes>
