@@ -15,7 +15,6 @@ import "./Navbar.css";
 export function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
-    console.log("setMenuIsOpen ? => ", isMenuOpen);
     setMenuOpen(!isMenuOpen);
   };
   return (
@@ -34,6 +33,7 @@ export function Navbar() {
                   return isActive ? { color: "black" } : {};
                 }}
                 to="/"
+                onClick={() => toggleMenu(true)}
               >
                 Accueil
               </NavLink>
@@ -44,6 +44,7 @@ export function Navbar() {
                   return isActive ? { color: "black" } : {};
                 }}
                 to="/domainesactivite"
+                onClick={() => toggleMenu(true)}
               >
                 Domaines d'activité
               </NavLink>
@@ -54,12 +55,21 @@ export function Navbar() {
                   return isActive ? { color: "black" } : {};
                 }}
                 to="/politiquetarifaire"
+                onClick={() => toggleMenu(true)}
               >
                 Politique tarifaire
               </NavLink>
             </li>
             <li className="contact">
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink
+                style={({ isActive }) => {
+                  return isActive ? { color: "black" } : {};
+                }}
+                to="/contact"
+                onClick={() => toggleMenu(true)}
+              >
+                Contact
+              </NavLink>
             </li>
           </ul>
         </div>

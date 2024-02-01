@@ -28,7 +28,7 @@ ul li {
 }
 
 a.active {
-  text-decoration: underline 5px #F5777E;
+  text-decoration: underline 5px #f5777e;
 }
 
 .menu-burger {
@@ -39,7 +39,7 @@ a.active {
   width: 35px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 966px) {
   nav .mobile-menu {
     margin-left: 0;
   }
@@ -79,11 +79,16 @@ a.active {
     color: rgb(45, 44, 44);
   }
   a.active {
-    text-decoration: underline 10px #F5777E;
+    text-decoration: underline 10px #f5777e;
   }
 
   .menu-burger {
+    font-size: 1.8em;
     display: block;
     cursor: pointer;
+  }
+
+  .card-container {
+    flex-direction: column;
   }
 }
