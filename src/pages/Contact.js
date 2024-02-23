@@ -1,29 +1,31 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import {
-  GoogleMap,
-  useLoadScript,
-  Marker,
-  InfoWindow,
-} from "@react-google-maps/api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import Map from "../components/Map";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
+  const [capVal, setCapVal] = useState(null);
 
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCqzOa7PXbIfTcxbmEeGf3ykCRxHahddZs",
-  });
-  if (!isLoaded) return <div>Loading...</div>;
+  const handleRecaptchaChange = (value) => {
+    setCapVal(value);
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Use your EmailJS template ID and user ID
+    // Add your EmailJS logic here
+    if (capVal) {
+      // Your form submission logic
+    } else {
+      alert("Please complete the reCAPTCHA challenge.");
+    }
+
     const templateParams = {
       from_name: name,
       from_email: email,
@@ -91,8 +93,20 @@ export function Contact() {
                 onChange={(event) => setMessage(event.target.value)}
               ></textarea>
             </div>
-            <span className={`success ${success ? "visible success" : "hidden"}`}>Votre message a bien été envoyé, <br/>nous essaierons de vous répondre dans les plus brefs délais !</span>
-            <button className="button">
+            <span
+              className={`success ${success ? "visible success" : "hidden"}`}
+            >
+              Votre message a bien été envoyé, <br />
+              nous essaierons de vous répondre dans les plus brefs délais !
+            </span>
+            <div className="container-input">
+              <label htmlFor="recaptcha">reCAPTCHA: </label>
+              <ReCAPTCHA
+                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                onChange={handleRecaptchaChange}
+              />
+            </div>
+            <button className="button" disabled={!capVal}>
               <FontAwesomeIcon
                 className="icon-small icon-white"
                 icon={faPaperPlane}
@@ -103,42 +117,6 @@ export function Contact() {
           <Map />
         </div>
       </div>
-    </>
-  );
-}
-
-function Map() {
-  const center = useMemo(
-    () => ({ lat: 45.758412127421145, lng: 4.876757473011187 }),
-    []
-  );
-
-  const [isMounted, setIsMounted] = useState(false);
-  useEffect(() => setIsMounted(true), []);
-
-  return (
-    <>
-      <GoogleMap
-        zoom={15}
-        center={center}
-        mapContainerClassName="map-container"
-      >
-        {isMounted && (
-          <Marker position={center}>
-            <InfoWindow
-              position={{ lat: 45.75966965220212, lng: 4.876671642329604 }}
-              state={true}
-            >
-              <div className="map-info-window">
-                <h4>Sylvain Dubray</h4>
-                <p>1 ter rue Frédéric Mistral</p>
-                <p>69100 Villeurbanne</p>
-                <p>Toque n°2246</p>
-              </div>
-            </InfoWindow>
-          </Marker>
-        )}
-      </GoogleMap>
     </>
   );
 }

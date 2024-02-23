@@ -75,6 +75,7 @@ form {
   flex-direction: column;
   gap: 16px;
   font-weight: bold;
+  margin-bottom: 32px;
   padding: 36px;
   border-radius: 4px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
@@ -83,11 +84,6 @@ form {
 
 input {
   height: 35px;
-}
-
-input,
-textarea {
-  padding: 8px;
 }
 
 .button {
