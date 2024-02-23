@@ -13,9 +13,12 @@ nav {
 }
 
 .logo img {
-  margin: 17.5px 0;
+  /* margin: 17.5px 0;
   max-height: 80px;
+  width: 80%; */
+  margin: 8px;
   width: 80%;
+  height: 80px;
 }
 
 ul {
@@ -32,11 +35,10 @@ a.active {
 }
 
 .menu-burger {
+  width: 20px;
   display: none;
   position: absolute;
-  top: 35px;
-  right: 35px;
-  width: 35px;
+  right: 20px;
 }
 
 @media screen and (max-width: 966px) {

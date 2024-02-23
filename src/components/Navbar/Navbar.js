@@ -7,7 +7,7 @@ import { Contact } from "../../pages/Contact";
 import { MentionsLegales } from "../../pages/MentionsLegales";
 import { Page404 } from "../../pages/Page404";
 
-import logo from "../../images/logo.png";
+import logo from "../../images/Vector.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
