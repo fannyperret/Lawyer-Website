@@ -2,7 +2,7 @@
   "name": "sylvain-dubray-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fannyperret.github.io/Lawyer-Website",
+  "homepage": "https://sylvaindubrayavocat.com",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
