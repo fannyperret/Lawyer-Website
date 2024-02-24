@@ -19,11 +19,10 @@ export function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Add your EmailJS logic here
     if (capVal) {
       // Your form submission logic
     } else {
-      alert("Please complete the reCAPTCHA challenge.");
+      alert("Veuillez valider le formulaire captcha.");
     }
 
     const templateParams = {
@@ -40,14 +39,14 @@ export function Contact() {
         "CJsAYky93OblqEC5F"
       )
       .then((response) => {
-        console.log("Email send successfully:", response);
+        console.log("Email envoyé avec succès : ", response);
         setName("");
         setEmail("");
         setMessage("");
         setSuccess(true);
       })
       .catch((error) => {
-        console.error("Error sending email:", error);
+        console.error("Erreur lors de l'envoi : ", error);
       });
   };
 
@@ -61,7 +60,7 @@ export function Contact() {
         <div className="container-contact">
           <form onSubmit={handleSubmit}>
             <div className="container-input">
-              <label htmlFor="name">Votre nom et prénom : </label>
+              <label htmlFor="name">Nom et prénom : </label>
               <input
                 type="text"
                 name="name"
@@ -72,7 +71,7 @@ export function Contact() {
               />
             </div>
             <div className="container-input">
-              <label htmlFor="email">Votre email : </label>
+              <label htmlFor="email">Email : </label>
               <input
                 type="email"
                 name="email"
@@ -83,7 +82,7 @@ export function Contact() {
               />
             </div>
             <div className="container-input">
-              <label htmlFor="message">Votre message : </label>
+              <label htmlFor="message">Message : </label>
               <textarea
                 id="message"
                 name="message"
@@ -100,7 +99,7 @@ export function Contact() {
               nous essaierons de vous répondre dans les plus brefs délais !
             </span>
             <div className="container-input">
-              <label htmlFor="recaptcha">reCAPTCHA: </label>
+              <label htmlFor="recaptcha">Veuillez cocher la case ci-dessous pour continuer : </label>
               <ReCAPTCHA
                 sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                 onChange={handleRecaptchaChange}
