@@ -99,9 +99,12 @@ export function Contact() {
               nous essaierons de vous répondre dans les plus brefs délais !
             </span>
             <div className="container-input">
-              <label htmlFor="recaptcha">Veuillez cocher la case ci-dessous pour continuer : </label>
+              <label htmlFor="recaptcha">
+                Veuillez cocher la case ci-dessous pour continuer :{" "}
+              </label>
               <ReCAPTCHA
-                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                // sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                sitekey="6Le7BX4pAAAAAEXWdR1VE29_weFEVE32LLgRlj98"
                 onChange={handleRecaptchaChange}
               />
             </div>
