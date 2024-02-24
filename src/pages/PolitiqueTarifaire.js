@@ -5,7 +5,7 @@ export function PolitiqueTarifaire() {
     <>
       <div className="page">
         <div className="container-home">
-          <h1 className="h1-second-size">Politique tarifaire</h1>
+          <h1>Politique tarifaire</h1>
         </div>
 
         <div className="description-container">

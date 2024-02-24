@@ -14,8 +14,7 @@ export function Accueil() {
       <div className="page">
         <div className="container">
           <div className="title-container">
-            <h1>Sylvain Dubray</h1>
-            <h2>Avocat - Lyon</h2>
+            <h1>Avocat au barreau de Lyon</h1>
           </div>
 
           <div className="description-container">

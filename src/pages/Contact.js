@@ -55,7 +55,7 @@ export function Contact() {
     <>
       <div className="page">
         <div className="container-home">
-          <h1 className="h1-second-size">Contact</h1>
+          <h1>Contact</h1>
         </div>
 
         <div className="container-contact">

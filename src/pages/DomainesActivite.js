@@ -10,7 +10,7 @@ export function DomainesActivite() {
     <>
       <div className="page">
         <div className="container-home">
-          <h1 className="h1-second-size">
+          <h1>
             Domaine d'intervention
             <br /> en droit du travail
           </h1>

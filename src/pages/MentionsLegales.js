@@ -3,7 +3,7 @@ export function MentionsLegales() {
     <>
       <div className="page">
         <div className="container-home">
-          <h1 className="h1-second-size">Mention légales</h1>
+          <h1>Mention légales</h1>
         </div>
         <div>
           <div>
