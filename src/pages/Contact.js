@@ -103,8 +103,7 @@ export function Contact() {
                 Veuillez cocher la case ci-dessous pour continuer :{" "}
               </label>
               <ReCAPTCHA
-                // sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                sitekey="6Le7BX4pAAAAAEXWdR1VE29_weFEVE32LLgRlj98"
+                sitekey="6LcIC34pAAAAACQTuVWlgOnBuyOdCuPose4tNuRS"
                 onChange={handleRecaptchaChange}
               />
             </div>
